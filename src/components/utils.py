@@ -7,7 +7,7 @@ from src.logger import logging
 from src.exception import CustomException
 
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
 best_model = load_model(r"artifacts/best_model.h5")
 face_cascade = cv2.CascadeClassifier(r'artifacts/haarcascade_frontalface_default.xml')
 
